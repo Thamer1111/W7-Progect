@@ -41,7 +41,7 @@ export default function ChatPage() {
       setMessages(filtered);
     };
     fetchMessages();
-    const interval = setInterval(fetchMessages, 2000);
+    const interval = setInterval(fetchMessages, 1000);
     return () => clearInterval(interval);
   }, [selectedUser, currentUser]);
 
